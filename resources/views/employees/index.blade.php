@@ -18,7 +18,7 @@
 					<span>ФИО сотрудника: </span>
 					<span>{{ $employee->name }}</span>
 					<form action="{{ route('employees.show', ['employee' => $employee->id]) }}" method="get">
-						<button type="submit">Посмотреть остальные данные</button>
+						<button type="submit">Посмотреть все данные</button>
 					</form>
 					<form action="{{ route('employees.destroy', ['employee' => $employee->id]) }}" method="POST">
 						@method("delete")
